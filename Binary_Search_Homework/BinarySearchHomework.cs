@@ -47,10 +47,7 @@ namespace Binary_Search_Homework // don't edit this line!!!
         {
             int first = BinarySearchForCalculatingRepeated(arr, key, true, 0, arr.Length - 1);
             if (first != -1)
-            {
-                int last = BinarySearchForCalculatingRepeated(arr, key, false, first, arr.Length - 1);
-                return (last - first) + 1;
-            }
+            { int last = BinarySearchForCalculatingRepeated(arr, key, false, first, arr.Length - 1); return (last - first) + 1; }
             return 0;
             //TODO: write code to calculate the repeat count of a spacific element
             // make sure to use the previous method in this method
